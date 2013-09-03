@@ -50,7 +50,7 @@ case $1 in
 	;;
 
 	config)
-		echo graph_title OpenSMTPd queue stats 
+		echo graph_title OpenSMTPd queue stats
 		echo graph_vlabel mails in queue
 		echo graph_category opensmtpd
 		echo queue.label queue
