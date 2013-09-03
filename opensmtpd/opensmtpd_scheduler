@@ -50,7 +50,7 @@ case $1 in
 	;;
 
 	config)
-		echo graph_title OpenSMTPd stats 
+		echo graph_title OpenSMTPd stats
 		echo graph_vlabel mails / second
 		echo graph_category opensmtpd
 		echo graph_total total
