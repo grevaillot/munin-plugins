@@ -67,7 +67,7 @@ case $1 in
 
 esac
 
-echo permfail.value `($SMTPCTL show stats| grep scheduler.delivery.permfail= | cut -d\= -f2)`
-echo tempfail.value `($SMTPCTL show stats | grep scheduler.delivery.tempfail= | cut -d\= -f2)`
-echo ok.value `($SMTPCTL show stats | grep scheduler.delivery.ok= | cut -d\= -f2)`
+echo permfail.value `($SMTPCTL show stats | (grep scheduler.delivery.permfail= || echo scheduler.delivery.permfail=0) | cut -d\= -f2)`
+echo tempfail.value `($SMTPCTL show stats | (grep scheduler.delivery.tempfail= || echo scheduler.delivery.tempfail=0) | cut -d\= -f2)`
+echo ok.value `($SMTPCTL show stats | (grep scheduler.delivery.ok= || echo scheduler.delivery.ok=0) | cut -d\= -f2)`
 
