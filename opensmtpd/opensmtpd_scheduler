@@ -10,7 +10,7 @@ opensmtpd_scheduler - Plugin to monitor opensmtpd_scheduler
 =head1 CONFIGURATION
 
 [opensmtpd]
-env.smtpctl /usr/local/sbin/smtpctl
+env.smtpctl /usr/sbin/smtpctl
 
 =head1 AUTHOR
 
