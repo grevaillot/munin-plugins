@@ -58,6 +58,7 @@ case $1 in
 		for field in permfail tempfail ok; do
 			echo "$field.label $field"
 			echo "$field.type DERIVE"
+			echo "$field.min 0"
 			print_warning $field
 			print_critical $field
 		done
